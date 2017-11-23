@@ -1,7 +1,9 @@
 node_modules/
 .expo/
 npm-debug.*
-./*.*
+./.*
 android/
 ios/
 .idea/
+index.js
+yarn.lock
