@@ -1,9 +1,0 @@
-{
-  "sites": {
-    "api": {
-      "glob": "{lib,docs}/**/*.{js,md}"
-    }
-  }
-}
-
-//comment

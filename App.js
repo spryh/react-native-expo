@@ -1,5 +1,25 @@
+// Import library to help create a component
 import React from 'react'
+import ReactNative from 'react-native'
+
+// Create a component
+
+/**/
+
+const App = () => {
+    return (
+        <Text> Some Text </Text>
+    )
+}
+
+// Render it to the device
+
+
+
+
+/* import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+
 
 export default class App extends React.Component {
   render () {
@@ -20,4 +40,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   }
-})
+}) */
+
