@@ -1,23 +1,25 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, AppRegistry } from 'react-native'
+
 
 export default class App extends React.Component {
   render () {
     return (
-      <View style={styles.container}>
-        <Text>...................................</Text>
-      </View>
+        <Text> Some Text </Text>
     )
   }
-}
+} 
+
+/*       <View style={styles.container}>
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#9b59b6',
     alignItems: 'center',
     justifyContent: 'center'
   }
-})
+})*/
 
-//initial 
+// Is this necessary?
+// AppRegistry.registerComponent('albums', () => App)
