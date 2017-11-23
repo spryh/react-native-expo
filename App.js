@@ -1,9 +1,15 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import Header from './src/components/header'
+import Header from './src/components/Header'
+import AlbumList from './src/components/AlbumList'
 
 export default class App extends React.Component {
   render () {
-    return <Header headerText={'Albums Whatever'}/>
+    return (
+      <View>
+        <Header headerText={'Albums Whatever'} />
+        <AlbumList />
+      </View>
+    )
   }
 }
