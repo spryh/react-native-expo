@@ -1,16 +1,15 @@
 import React from 'react'
-import { StyleSheet, Text, View, AppRegistry } from 'react-native'
-
+import { Text } from 'react-native'
 
 export default class App extends React.Component {
   render () {
-    return (
-        <Text> Some Text </Text>
-    )
+    return <Text> Some Text </Text>
   }
-} 
+}
 
-/*       <View style={styles.container}>
+/* Deprecated from CRNA template
+import { StyleSheet, Text, View } from 'react-native'
+<View style={styles.container}>
 
 const styles = StyleSheet.create({
   container: {
@@ -19,7 +18,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   }
-})*/
+})
+*/
 
 // This is taken care of in index.js
 // AppRegistry.registerComponent('albums', () => App)
