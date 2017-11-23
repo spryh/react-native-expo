@@ -7,19 +7,5 @@ export default class App extends React.Component {
   }
 }
 
-/* Deprecated from CRNA template
-import { StyleSheet, Text, View } from 'react-native'
-<View style={styles.container}>
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#9b59b6',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
-*/
-
-// This is taken care of in index.js
+// 5.20 Import Destructuring is taken care of in index.js
 // AppRegistry.registerComponent('albums', () => App)
