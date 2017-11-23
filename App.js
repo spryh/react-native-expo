@@ -5,10 +5,7 @@ import Header from './src/components/header'
 export default class App extends React.Component {
   render () {
     return (
-      <View style={{flex: 1}}>
-        <Text> Put the header here </Text>
         <Header />
-      </View>
     )
   }
 }
