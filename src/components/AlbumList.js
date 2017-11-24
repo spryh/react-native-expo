@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
-const AlbumList = props => {
-  const { textStyle, viewStyle } = styles
+// Class Component for handling dynamic data 5.31
 
-  return (
-    <View style={viewStyle}>
-      <Text style={textStyle}>AlbumList</Text>
-    </View>
-  )
-}
+class AlbumList extends Component {
+  // const { textStyle, viewStyle } = styles
 
-const styles = {
+  render () {
+    return (
+      <View>
+        <Text>AlbumList</Text>
+      </View>
+    )
+  }
+
+  /* const styles = {
   textStyle: {
     fontSize: 30
   },
@@ -28,5 +31,7 @@ const styles = {
     elevation: 2,
     position: 'relative'
   }
+} */
 }
+
 export default AlbumList

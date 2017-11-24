@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
+// Functional Component for simple presentation of static data 5.31
 const Header = (props) => {
   const { textStyle, viewStyle } = styles
 
