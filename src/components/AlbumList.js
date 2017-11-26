@@ -13,22 +13,26 @@ class AlbumList extends Component {
       // This is the array of Json objects
       .then(fetchedJsonArray => {
         console.log(fetchedJsonArray)
-        console.log(fetchedJsonArray[0].artist)
-        //console.log(fetchedJson)
-        
+        // console.log(fetchedJsonArray[0].artist)
         // Component level state - set the state of Albumlist.state.albums to
-        this.setState({ albums: fetchedJson })
+        this.setState({ albums: fetchedJsonArray })
       })
       .catch(error => {
         console.error(error)
       })
   }
 
+  renderAlbums() {
+    // map is an array helper
+    // takes function, return is entered into array slot
+    // Key is required. Just use any unique value.
+    return this.state.albums.map(album => <Text key={album.title}>{album.title}</Text>)
+  }
+  
   render() {
-    console.log(this.state)
     return (
       <View>
-        <Text>Album List</Text>
+        <Text>{this.renderAlbums()}</Text>
       </View>
     )
   }
