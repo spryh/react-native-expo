@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-
+import { View } from 'react-native' // Text
+import AlbumDetail from './AlbumDetail'
 // Class Component for handling dynamic data 5.31
 
 class AlbumList extends Component {
@@ -26,13 +26,14 @@ class AlbumList extends Component {
     // map is an array helper
     // takes function, return is entered into array slot
     // Key is required. Just use any unique value.
-    return this.state.albums.map(album => <Text key={album.title}>{album.title}</Text>)
+    // Pass AlbumDetail a prop called album
+    return this.state.albums.map(album => <AlbumDetail key={album.title} album={album} />)
   }
   
   render() {
     return (
       <View>
-        <Text>{this.renderAlbums()}</Text>
+        {this.renderAlbums()}
       </View>
     )
   }
