@@ -2,18 +2,21 @@ import React from 'react'
 import { View } from 'react-native'
 
 /**
+ * TAKE props
  * RETURN JSX within CardContainer view
- * @param {*} props Any jsx object
+ * @param {'{JSX}'} props Any JSX object
  */
-const CardContainer = (props) => {
-  return <View style={styles.containerViewStyle}>{props.children}</View>
+const Card = props => {
+  return <View style={styleSheet.containerStyle}>
+    {props.children}
+  </View>
 }
 
 /**
- * Container View Styles
+ * Card View Styles
  */
-const styles = {
-  containerViewStyle: {
+const styleSheet = {
+  containerStyle: {
     borderWidth: 1,
     borderRadius: 2,
     borderColor: '#dddddd',
@@ -30,4 +33,4 @@ const styles = {
   }
 }
 
-export default CardContainer
+export default Card
