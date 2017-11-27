@@ -2,10 +2,17 @@ import React from 'react'
 import { Text, View } from 'react-native'
 
 // Functional Component for simple presentation of static data 5.31
+// I wonder if this works with "headerText" instead of "props"
+
+/**
+ * Returns header JSX w/ styling
+ * @param {string} props headerText
+ */
 const Header = (props) => {
   const { textStyle, viewStyle } = styles
 
   // Parent component should provide HeaderText
+
   return (
     <View style={viewStyle}>
       <Text style={textStyle}>{props.headerText}</Text> 
@@ -13,6 +20,11 @@ const Header = (props) => {
   )
 }
 
+/**
+ * Style Sheet for Header
+ * @prop textStyle
+ * @prop viewStyle
+ */
 const styles = {
   textStyle: {
     fontSize: 30 // RN uses camelCase on the styling

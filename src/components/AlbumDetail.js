@@ -1,13 +1,16 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Text } from 'react-native'
+import CardContainer from './CardContainer'
 
-// We're just rendering content here, so make it functional component
-
-const AlbumDetail = (props) => {
+/**
+ * Takes Album array => returns Album Title
+ * @param {object[]} props album[ ]
+ */
+const AlbumDetail = props => {
   return (
-    <View>
+    <CardContainer>
       <Text>{props.album.title}</Text>
-    </View>
+    </CardContainer>
   )
 }
 

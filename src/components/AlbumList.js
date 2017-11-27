@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import { View } from 'react-native' // Text
 import AlbumDetail from './AlbumDetail'
-// Class Component for handling dynamic data 5.31
 
+
+/**
+ * Fetches JSON from URL => RETURNS AlbumDetail
+ */
 class AlbumList extends Component {
   state = { albums: [] }
 
@@ -22,6 +25,9 @@ class AlbumList extends Component {
       })
   }
 
+  /**
+   * => RETURNS Albums Map
+   */
   renderAlbums() {
     // map is an array helper
     // takes function, return is entered into array slot

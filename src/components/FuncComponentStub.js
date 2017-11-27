@@ -5,7 +5,7 @@ import { View, Text } from 'react-native'
  * Takes  => returns 
  * @param {object[]} props prop?[ ]
  */
-const AlbumItem = (props) => {
+const FuncComponentStub = (props) => {
   return (
     <View>
       <Text>{}</Text>
@@ -13,4 +13,4 @@ const AlbumItem = (props) => {
   )
 }
 
-export default AlbumItem
+export default FuncComponentStub
